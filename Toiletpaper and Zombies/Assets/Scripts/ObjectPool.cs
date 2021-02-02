@@ -51,7 +51,7 @@ public class ObjectPool : MonoBehaviour
     {
         if (!poolDic.ContainsKey(tag))
         {
-            Debug.Log("tag zit er niet in" + tag);
+            Debug.Log("TAG IS NOT GIVEN" + tag);
 
             return null;
         }
