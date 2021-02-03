@@ -15,6 +15,7 @@ public class EnemyHealth : Health
         {
             print("Enemy collided with Player");
             ChangeHealth(-1);
+            Debug.Log(currentHealth);
         }
 
         if (currentHealth == 0)
