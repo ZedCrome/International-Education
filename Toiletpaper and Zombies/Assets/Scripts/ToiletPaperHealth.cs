@@ -6,9 +6,9 @@ public class ToiletPaperHealth : Health
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            print("Enemy collided with Player");
+            print("Object Destroyed");
             ChangeHealth(-maxHealth);
         }
 
