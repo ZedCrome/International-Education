@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMovement : MonoBehaviour, iPooled
 {
+    public EnemyData Data;
+
     private Vector2 movement;
-    private float speed;
-    public float maxSpeed = 2f;
-    public float minSpeed = 3f;
+    private float m_enemySpeed;
+    
 
     public Sprite enemySprite;
     
@@ -14,9 +15,15 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private GameObject target;
     
     
+    public void OnSpawn()
+    {
+        m_enemySpeed = Data.m_Speed;
+
+    }
+
     void Start()
     {
-        speed = Random.Range(minSpeed, maxSpeed);
+        
         rb = GetComponent<Rigidbody2D>();
         targetPos = target.transform.position;
     }
@@ -36,7 +43,7 @@ public class EnemyMovement : MonoBehaviour
             float x = (targetPos.x - transform.position.x);
             float y = (targetPos.y - transform.position.y);
 
-            Vector2 movement = new Vector2(x, y).normalized * speed;
+            Vector2 movement = new Vector2(x, y).normalized * m_enemySpeed;
 
             rb.velocity = movement; 
         }

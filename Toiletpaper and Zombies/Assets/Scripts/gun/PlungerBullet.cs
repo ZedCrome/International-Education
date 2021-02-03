@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlungerBullet : MonoBehaviour, iPooled
 {
     public Rigidbody2D rb;
+    private Vector2 abc;
     [Header("projectile Speed")]
     public float m_force;
 
@@ -19,14 +20,16 @@ public class PlungerBullet : MonoBehaviour, iPooled
     {
         rb.AddForce(transform.right * m_force);
         Invoke("Destroy", 2f);
+        
     }
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Vector2 m_boom = transform.position;
         if(collision.gameObject.tag == "Enemy")
         {
-            var hitColliders = Physics2D.OverlapCircleAll(transform.position, m_radius);
-
+            var hitColliders = Physics2D.OverlapCircleAll(m_boom, m_radius);
+            abc = m_boom;
             foreach (var hitCollider in hitColliders)
             {
                
@@ -35,7 +38,7 @@ public class PlungerBullet : MonoBehaviour, iPooled
                 {
                     
                     enemy.currentHP(m_damage);
-                    Debug.Log(m_damage);
+
                     
                 }
 
@@ -48,5 +51,12 @@ public class PlungerBullet : MonoBehaviour, iPooled
     {
         gameObject.SetActive(false);
     }
-    
+    private void OnDrawGizmos()
+    {
+        
+        Gizmos.color = Color.red;
+        //Use the same vars you use to draw your Overlap SPhere to draw your Wire Sphere.
+        Gizmos.DrawWireSphere(transform.position, m_radius);
+    }
+
 }

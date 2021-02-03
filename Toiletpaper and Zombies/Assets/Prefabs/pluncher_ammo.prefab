@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: -6011223033178040473}
-  m_force: 100
+  m_force: 350
   m_radius: 1
   m_damage: 5
 --- !u!50 &-6011223033178040473

@@ -15,7 +15,7 @@ public class WaveManager : MonoBehaviour
     public int WaveMultiplier;
     public float m_waveTimer;
 
-    public int waveCount;
+    public int waveCount = 0;
 
     private void Start()
     {
@@ -27,6 +27,7 @@ public class WaveManager : MonoBehaviour
         float m_currentWaitTimer = m_waveTimer;
         while (m_currentWaitTimer > 0)
         {
+            Debug.Log("New Wave in " + m_currentWaitTimer);
             yield return new WaitForSeconds(1f);
             m_currentWaitTimer--;
             
@@ -36,10 +37,10 @@ public class WaveManager : MonoBehaviour
 
     IEnumerator WaveSpawner()
     {
-
+        Debug.Log("Starting New Wave");
         for (int i = 0; i < WaveLength * WaveMultiplier; i++)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1.7f);
             GameObject m_currentSpawn = m_spawnLoc[Random.Range(0, m_spawnLoc.Length)];
             
 
@@ -51,9 +52,8 @@ public class WaveManager : MonoBehaviour
         }
         WaveMultiplier++;
         waveCount++;
-       
-        StartCoroutine(CountDown());
+
+        StartCoroutine(WaveSpawner());
     }
-    
 
 }
