@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
+    private HUD hud;
+    
     [Header("spawn locations")]
     public GameObject[] m_spawnLoc;
 
@@ -13,10 +15,11 @@ public class WaveManager : MonoBehaviour
     public int WaveMultiplier;
     public float m_waveTimer;
 
-    private int m_waveCount;
+    public int waveCount;
 
     private void Start()
     {
+        hud = HUD.instance;
         StartCoroutine(CountDown());
     }
     IEnumerator CountDown()
@@ -47,7 +50,8 @@ public class WaveManager : MonoBehaviour
             }
         }
         WaveMultiplier++;
-        m_waveCount++;
+        waveCount++;
+        hud.Wave(waveCount);
         StartCoroutine(CountDown());
     }
     

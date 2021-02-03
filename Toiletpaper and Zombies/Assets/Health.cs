@@ -7,7 +7,7 @@ public class Health : MonoBehaviour
     [SerializeField] protected float maxHealth = 10;
     [SerializeField] protected float currentHealth;
 
-    public HUD hud;
+    private HUD hud;
 
     private void Start()
     {
