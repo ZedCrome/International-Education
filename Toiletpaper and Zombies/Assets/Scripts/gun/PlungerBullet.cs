@@ -12,7 +12,7 @@ public class PlungerBullet : MonoBehaviour, iPooled
     public float m_radius;
 
     [Header("Damage")]
-    public float m_damage;
+    public int m_damage;
 
 
     public void OnSpawn()
@@ -23,18 +23,20 @@ public class PlungerBullet : MonoBehaviour, iPooled
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag != "Player")
+        if(collision.gameObject.tag == "Enemy")
         {
             var hitColliders = Physics2D.OverlapCircleAll(transform.position, m_radius);
 
             foreach (var hitCollider in hitColliders)
             {
-                Debug.Log(m_damage);
+               
                 var enemy = hitCollider.GetComponent<EnemyHealth>();
                 if (enemy)
                 {
-                    enemy.ChangeHealth(m_damage);
+                    
+                    enemy.currentHP(m_damage);
                     Debug.Log(m_damage);
+                    
                 }
 
             }

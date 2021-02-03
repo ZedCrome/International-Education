@@ -36,7 +36,7 @@ public class WaveManager : MonoBehaviour
 
     IEnumerator WaveSpawner()
     {
-        Debug.Log("starting wave");
+
         for (int i = 0; i < WaveLength * WaveMultiplier; i++)
         {
             yield return new WaitForSeconds(1f);
@@ -51,7 +51,7 @@ public class WaveManager : MonoBehaviour
         }
         WaveMultiplier++;
         waveCount++;
-        hud.Wave(waveCount);
+       
         StartCoroutine(CountDown());
     }
     

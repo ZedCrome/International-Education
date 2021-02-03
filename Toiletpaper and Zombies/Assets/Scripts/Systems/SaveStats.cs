@@ -26,25 +26,11 @@ public class SaveStats : MonoBehaviour
     {
         hud = HUD.instance;
     }
-    
-    public void Wave(int enemyWave)
-    {
-        
-    }
-    
-    public void KilledEnemies(int kills)
-    {
-        
-    }
-
-    public void DamageDealt(int damage)
-    {
-       
-    }
 
     private void SavePlayerStats()
     {
-        PlayerPrefs.SetString("waves-cleared", hud.wave.ToString());
+        PlayerPrefs.SetFloat("waves-cleared", hud.amountOfWaves);
+        
         PlayerPrefs.SetString("enemies-killed", hud.killedEnemeis.ToString());
         PlayerPrefs.SetString("damage-dealt", hud.damageDealt.ToString());
     }

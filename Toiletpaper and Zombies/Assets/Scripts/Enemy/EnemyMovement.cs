@@ -7,16 +7,17 @@ public class EnemyMovement : MonoBehaviour
     public float maxSpeed = 2f;
     public float minSpeed = 3f;
 
+    public Sprite enemySprite;
+    
     private Rigidbody2D rb;
     private Vector2 targetPos;
-    public GameObject target;
+    [SerializeField] private GameObject target;
     
     
     void Start()
     {
         speed = Random.Range(minSpeed, maxSpeed);
         rb = GetComponent<Rigidbody2D>();
-        target = GameObject.Find("EnemyTargetPoint");
         targetPos = target.transform.position;
     }
     
