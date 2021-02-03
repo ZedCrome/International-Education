@@ -24,11 +24,11 @@ public class EnemyMovement : MonoBehaviour
     void FixedUpdate()
     {
         targetPos = target.transform.position;
-        GetTarget();
+        MoveEnemy();
     }
 
 
-    public void GetTarget()
+    public void MoveEnemy()
     {
         if (Vector2.Distance(transform.position, targetPos) > 0.1)
         {
@@ -43,7 +43,5 @@ public class EnemyMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(0, 0);
         }
-        
-        
     }
 }
