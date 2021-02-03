@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 1
   minSpeed: 0.2
+  enemySprite: {fileID: 0}
   target: {fileID: 4532035345272133092, guid: e272b575a4b5c1341ba9aeacbaade604, type: 3}
 --- !u!50 &2345515701817111510
 Rigidbody2D:
@@ -134,7 +135,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5240009030212764744
 BoxCollider2D:
   m_ObjectHideFlags: 0
