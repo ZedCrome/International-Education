@@ -23,10 +23,6 @@ public class WaveManager : MonoBehaviour
         WaveMultiplier++;
         yield return new WaitForSeconds(1f);
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-            StartCoroutine(EnemyWaveSpawner());
-    }
+    
 
 }
