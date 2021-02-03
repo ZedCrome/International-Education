@@ -10,7 +10,7 @@ public class PlungerBullet : MonoBehaviour, iPooled
     public void OnSpawn()
     {
         rb.AddForce(transform.right * Force);
-        Invoke("Destroy", 2f);
+        Invoke("Destroy", 6f);
     }
     private void Destroy()
     {
