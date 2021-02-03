@@ -51,7 +51,7 @@ public class WaveManager : MonoBehaviour
         }
         WaveMultiplier++;
         waveCount++;
-        hud.Wave(waveCount);
+       
         StartCoroutine(CountDown());
     }
     
