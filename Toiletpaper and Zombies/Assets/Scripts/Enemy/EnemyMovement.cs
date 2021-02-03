@@ -30,11 +30,20 @@ public class EnemyMovement : MonoBehaviour
 
     public void GetTarget()
     {
-        float x = (targetPos.x - transform.position.x);
-        float y = (targetPos.y - transform.position.y);
+        if (Vector2.Distance(transform.position, targetPos) > 0.1)
+        {
+            float x = (targetPos.x - transform.position.x);
+            float y = (targetPos.y - transform.position.y);
 
-        Vector2 movement = new Vector2(x, y).normalized * speed;
+            Vector2 movement = new Vector2(x, y).normalized * speed;
 
-        rb.velocity = movement;
+            rb.velocity = movement; 
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, 0);
+        }
+        
+        
     }
 }
