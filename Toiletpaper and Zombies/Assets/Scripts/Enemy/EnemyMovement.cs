@@ -9,14 +9,14 @@ public class EnemyMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 targetPos;
-    public GameObject target;
+    [SerializeField] private GameObject target;
     
     
     void Start()
     {
         speed = Random.Range(minSpeed, maxSpeed);
         rb = GetComponent<Rigidbody2D>();
-        target = GameObject.Find("EnemyTargetPoint");
+        //target = GameObject.Find("EnemyTargetPoint");
         targetPos = target.transform.position;
     }
     

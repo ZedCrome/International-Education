@@ -2,25 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : Health
+public class EnemyHealth : MonoBehaviour
 {
-    private void Kill()
+    public int m_enemyHealth = 10;
+    
+    public void currentHP(int m_changeHealth)
     {
-        //Destroy(gameObject);
-    }
+        m_enemyHealth -= m_changeHealth;
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        Debug.Log(m_enemyHealth);
+        if (m_enemyHealth == 0)
         {
-            print("Enemy collided with Player");
-            ChangeHealth(-1);
-            Debug.Log(currentHealth);
-        }
-
-        if (currentHealth == 0)
-        {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
