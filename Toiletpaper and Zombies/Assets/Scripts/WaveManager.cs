@@ -28,5 +28,4 @@ public class WaveManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
             StartCoroutine(EnemyWaveSpawner());
     }
-
 }
