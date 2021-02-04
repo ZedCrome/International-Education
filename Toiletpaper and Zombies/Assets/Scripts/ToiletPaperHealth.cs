@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ToiletPaperHealth : MonoBehaviour
 {
     public int m_currentHealth = 6;
-    public GameObject[] m_toiletPaper;
+    public List<GameObject> m_toiletPaper;
     private GameObject m_toBeDeleted;
     
 
@@ -16,7 +16,8 @@ public class ToiletPaperHealth : MonoBehaviour
         {
             m_currentHealth--;
             Debug.Log(m_currentHealth);
-            m_toBeDeleted = m_toiletPaper[Random.Range(0, m_toiletPaper.Length)];
+            m_toBeDeleted = m_toiletPaper[Random.Range(0, m_toiletPaper.Count)];
+            m_toiletPaper.Remove(m_toBeDeleted);
             Destroy(m_toBeDeleted);
             if (m_currentHealth <= 0)
                 NextScene();
