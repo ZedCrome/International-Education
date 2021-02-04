@@ -21,9 +21,11 @@ public class EnemyHealth : MonoBehaviour
         if (m_enemyHealth == 0)
         {
             hud.KilledEnemies(1);
-            gameObject.SetActive(false);
             //reset the current amount of health
             m_enemyHealth = Data.m_Health;
+            gameObject.SetActive(false);
+            
+           
         }
     }
 }

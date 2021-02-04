@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]private Animator anim;
     PlayerState playerState;
-
+    
     private SpriteRenderer playerSprite;
 
     [Header("Movement")]
@@ -21,21 +21,25 @@ public class PlayerMovement : MonoBehaviour
     public float m_yValue;
 
 
+
     private void Start()
     {
+        
         playerSprite = GetComponent<SpriteRenderer>();
     }
 
 
     private void FixedUpdate()
     {
-        Flip();
 
+        Flip();
         float horizontal = Input.GetAxisRaw("Horizontal") * Time.fixedDeltaTime;
         float vertical = Input.GetAxisRaw("Vertical") * Time.fixedDeltaTime;
         transform.position = new Vector2(
-            Mathf.Clamp(transform.position.x + (horizontal * speed),-m_xValue, m_xValue), 
+            Mathf.Clamp(transform.position.x + (horizontal * speed), -m_xValue, m_xValue),
             Mathf.Clamp(transform.position.y + (vertical * speed), -m_yValue, m_yValue));
+
+        
 
         if (horizontal == 0 && vertical == 0)
         {
@@ -49,10 +53,10 @@ public class PlayerMovement : MonoBehaviour
         anim.SetInteger("PlayerState", (int)playerState);
     }
 
-
     private void Flip()
     {
         playerSprite.flipX = transform.position.x < 0;
     }
+
 
 }
