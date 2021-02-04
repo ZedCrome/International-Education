@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
-    private HUD hud;
-    
     [Header("spawn locations")]
     public GameObject[] m_spawnLoc;
 
@@ -20,7 +18,7 @@ public class WaveManager : MonoBehaviour
 
     private void Start()
     {
-        hud = HUD.instance;
+
         StartCoroutine(CountDown());
     }
     IEnumerator CountDown()
@@ -57,7 +55,8 @@ public class WaveManager : MonoBehaviour
         UIScript.instance.wavetext++;
         UIScript.instance.ChangeTextWave();
         
-        
+
+
 
         StartCoroutine(WaveSpawner());
     }

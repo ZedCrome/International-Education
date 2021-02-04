@@ -7,18 +7,18 @@ public class Health : MonoBehaviour
     [SerializeField] protected float maxHealth = 6;
     [SerializeField] protected float currentHealth;
 
-    private HUD hud;
+
 
     private void Start()
     {
         currentHealth = maxHealth;
-        hud = HUD.instance;
+
     }
 
     public virtual void ChangeHealth(float amount)
     {
         currentHealth = currentHealth + amount;
-        hud.Hp(amount, maxHealth);
+        
         CheckHealth();
     }
 
