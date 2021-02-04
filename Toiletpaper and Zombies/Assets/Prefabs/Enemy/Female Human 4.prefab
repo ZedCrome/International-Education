@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 9566bacbea7c6704f8db7be8c1045006, type: 2}
-  Col: {fileID: 0}
+  Col: {fileID: 7115706745447818568}
 --- !u!1 &7662990742075835152
 GameObject:
   m_ObjectHideFlags: 0

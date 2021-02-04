@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: b2584d376aee8f442a0a29f8c2da62c6, type: 2}
-  Col: {fileID: 0}
+  Col: {fileID: 6781764617085273591}
 --- !u!50 &599552392557986939
 Rigidbody2D:
   serializedVersion: 4

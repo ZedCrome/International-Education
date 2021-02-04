@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 8dea7062ee4095440b1d278663ef3766, type: 2}
-  Col: {fileID: 0}
+  Col: {fileID: 6866566556626213399}
 --- !u!114 &4089893084530452749
 MonoBehaviour:
   m_ObjectHideFlags: 0
