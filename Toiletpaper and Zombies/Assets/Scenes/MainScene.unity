@@ -1527,8 +1527,8 @@ MonoBehaviour:
   - prefab: {fileID: 4831089799040934743, guid: f290714e165ed7a4d854780dce844ab9, type: 3}
     tag: PlungerAmmo
     poolSize: 20
-  - prefab: {fileID: 728816616723256068, guid: 8f7c4794f40e9a04d8a1d182b8df5101, type: 3}
-    tag: EnemyType1
+  - prefab: {fileID: 8038587772423462857, guid: e1f6e14004c78df41ba05b91ce548f1c, type: 3}
+    tag: EnemyType15
     poolSize: 50
   - prefab: {fileID: 1010633008842402586, guid: 97a78874648e3774b850271526c0e54b, type: 3}
     tag: EnemyType2
@@ -1568,9 +1568,6 @@ MonoBehaviour:
     poolSize: 50
   - prefab: {fileID: 5826996164227519630, guid: eea4c4d254ba169439d08443e45fa0f1, type: 3}
     tag: EnemyType14
-    poolSize: 50
-  - prefab: {fileID: 8038587772423462857, guid: e1f6e14004c78df41ba05b91ce548f1c, type: 3}
-    tag: EnemyType15
     poolSize: 50
 --- !u!4 &429883444
 Transform:
@@ -3022,6 +3019,21 @@ MonoBehaviour:
   WaveMultiplier: 1
   m_cooldownTimer: 0
   m_timeBetweenSpawning: 1
+  enemys:
+  - 15
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
 --- !u!1 &1187330095
 GameObject:
   m_ObjectHideFlags: 0
