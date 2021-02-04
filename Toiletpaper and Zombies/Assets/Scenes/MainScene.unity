@@ -1527,12 +1527,51 @@ MonoBehaviour:
   - prefab: {fileID: 4831089799040934743, guid: f290714e165ed7a4d854780dce844ab9, type: 3}
     tag: PlungerAmmo
     poolSize: 20
-  - prefab: {fileID: 8038587772423462857, guid: e1f6e14004c78df41ba05b91ce548f1c, type: 3}
+  - prefab: {fileID: 728816616723256068, guid: 8f7c4794f40e9a04d8a1d182b8df5101, type: 3}
     tag: EnemyType1
-    poolSize: 200
-  - prefab: {fileID: 8639170829029434312, guid: ee27d973a89c9dc43b4714ba25438247, type: 3}
+    poolSize: 50
+  - prefab: {fileID: 1010633008842402586, guid: 97a78874648e3774b850271526c0e54b, type: 3}
     tag: EnemyType2
-    poolSize: 200
+    poolSize: 50
+  - prefab: {fileID: 7790037740893070718, guid: fcd4b1531bad7114c931ede658b63c17, type: 3}
+    tag: EnemyType3
+    poolSize: 50
+  - prefab: {fileID: 5168993595107368707, guid: d4901ef69be724f40a400262e142a378, type: 3}
+    tag: EnemyType4
+    poolSize: 50
+  - prefab: {fileID: 5436228890569467581, guid: dee01287fc76a7348bf30c0fe27a5025, type: 3}
+    tag: EnemyType5
+    poolSize: 50
+  - prefab: {fileID: 5931818515736859382, guid: a00223e2e7678d148a679c9d46043c44, type: 3}
+    tag: EnemyType6
+    poolSize: 50
+  - prefab: {fileID: 7368013687355844699, guid: a3acc655c5ed9ec4f997ad50e46fa352, type: 3}
+    tag: EnemyType7
+    poolSize: 50
+  - prefab: {fileID: 4302710377998779648, guid: f419a9aa2fd34df47ad89e0a273fab31, type: 3}
+    tag: EnemyType8
+    poolSize: 50
+  - prefab: {fileID: 3569981778886322152, guid: 4eef7e5f309d2d34bad8b905d8b0cccd, type: 3}
+    tag: EnemyType9
+    poolSize: 50
+  - prefab: {fileID: 1397353619992791073, guid: 9710433fad0bc76499c3a3f7097ba718, type: 3}
+    tag: EnemyType10
+    poolSize: 50
+  - prefab: {fileID: 4180533559712604582, guid: 54be88c3951b8294cb937b4b28dd520f, type: 3}
+    tag: EnemyType11
+    poolSize: 50
+  - prefab: {fileID: 8639170829029434312, guid: ee27d973a89c9dc43b4714ba25438247, type: 3}
+    tag: EnemyType12
+    poolSize: 50
+  - prefab: {fileID: 1031871985415537225, guid: 4ea780ee47f0e0e48a792f976be9b2f2, type: 3}
+    tag: EnemyType13
+    poolSize: 50
+  - prefab: {fileID: 5826996164227519630, guid: eea4c4d254ba169439d08443e45fa0f1, type: 3}
+    tag: EnemyType14
+    poolSize: 50
+  - prefab: {fileID: 8038587772423462857, guid: e1f6e14004c78df41ba05b91ce548f1c, type: 3}
+    tag: EnemyType15
+    poolSize: 50
 --- !u!4 &429883444
 Transform:
   m_ObjectHideFlags: 0

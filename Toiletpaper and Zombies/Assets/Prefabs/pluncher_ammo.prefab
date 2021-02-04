@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4831089799040934743}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 2407227115278285028}
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ecf21e87bf69bbb498ab9d9162e8fd20, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8eef104cd3fb2c54d992988870fedb6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   rb: {fileID: -6011223033178040473}
   col: {fileID: -4760152661264818307}
   m_force: 350
-  m_radius: 1
+  m_radius: 3
   m_damage: 5
   Explosion: {fileID: 2407227115278285029}
 --- !u!50 &-6011223033178040473
@@ -237,18 +237,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020728134, y: 0.0003634356}
+  m_Offset: {x: -0.0005521476, y: 0.0008555278}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.29, y: 0.37}
+    oldSize: {x: 0.38, y: 0.17}
     newSize: {x: 0.29, y: 0.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13259655, y: 0.050329372}
+  m_Size: {x: 0.3796296, y: 0.16941704}
   m_EdgeRadius: 0
 --- !u!1001 &7345048585302061723
 PrefabInstance:
@@ -261,6 +261,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particle
       objectReference: {fileID: 0}
+    - target: {fileID: 4937891925844003449, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
       propertyPath: InitialModule.size3D
       value: 0
@@ -268,6 +276,18 @@ PrefabInstance:
     - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
       propertyPath: SizeModule.separateAxes
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -282,8 +302,32 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.ctime4
+      value: 26600
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.ctime5
+      value: 37779
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key5.b
+      value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key5.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key5.r
+      value: 0.7667766
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
       value: 0.7322407
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4937891925844003454, guid: 5ba9315f4c90f8b4ab12fef78c4cd657, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].inSlope
