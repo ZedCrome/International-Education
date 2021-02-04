@@ -46,7 +46,7 @@ public class WaveManager : MonoBehaviour
             GameObject m_currentSpawn = m_spawnLoc[Random.Range(0, m_spawnLoc.Length)];
             
 
-            GameObject m_enemyType1 = ObjectPool.instance.SpawnPool("EnemyType1", m_currentSpawn.transform.position, Quaternion.identity);
+            GameObject m_enemyType1 = ObjectPool.instance.SpawnPool("EnemyType2", m_currentSpawn.transform.position, Quaternion.identity);
             if (m_enemyType1 != null)
             {
                 m_enemyType1.SetActive(true);
