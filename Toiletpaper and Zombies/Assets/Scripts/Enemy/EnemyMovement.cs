@@ -6,15 +6,16 @@ public class EnemyMovement : MonoBehaviour, iPooled
 
     private Vector2 movement;
     private float m_enemySpeed;
-    
+
 
     public Sprite enemySprite;
-    
+    private SpriteRenderer mySprite;
+
     private Rigidbody2D rb;
     private Vector2 targetPos;
     [SerializeField] private GameObject target;
-    
-    
+
+
     public void OnSpawn()
     {
         m_enemySpeed = Data.m_Speed;
@@ -23,16 +24,24 @@ public class EnemyMovement : MonoBehaviour, iPooled
 
     void Start()
     {
-        
+
         rb = GetComponent<Rigidbody2D>();
         targetPos = target.transform.position;
+        mySprite = GetComponent<SpriteRenderer>();
     }
-    
-    
+
+
     void FixedUpdate()
     {
         targetPos = target.transform.position;
         MoveEnemy();
+
+        Flip();
+    }
+
+    private void Flip()
+    {
+        mySprite.flipX = transform.position.x > 0;
     }
 
 
@@ -45,7 +54,7 @@ public class EnemyMovement : MonoBehaviour, iPooled
 
             Vector2 movement = new Vector2(x, y).normalized * m_enemySpeed;
 
-            rb.velocity = movement; 
+            rb.velocity = movement;
         }
         else
         {
