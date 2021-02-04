@@ -23,8 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     private void Start()
-    {
-        
+    {      
         playerSprite = GetComponent<SpriteRenderer>();
     }
 

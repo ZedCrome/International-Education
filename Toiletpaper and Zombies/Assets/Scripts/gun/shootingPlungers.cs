@@ -22,6 +22,11 @@ public class shootingPlungers : MonoBehaviour
         {
             m_plungerAmmo.SetActive(true);
         }
-        
+
+        if (GetComponent<AudioSource>() != null)
+        {
+            GetComponent<AudioSource>().Play();
+        }
+
     }
 }

@@ -53,7 +53,12 @@ public class PlungerBullet : MonoBehaviour, iPooled
             }
             
         }
-        
+
+        if (GetComponent<AudioSource>() != null)
+        {
+            GetComponent<AudioSource>().Play();
+        }
+
         Invoke("Destroy", 0.4f);
         
     }
