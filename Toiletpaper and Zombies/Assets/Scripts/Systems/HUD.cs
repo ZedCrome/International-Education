@@ -26,24 +26,25 @@ public class HUD : MonoBehaviour
         else if (instance != this)
             Destroy(this);    
     }
+    
 
     public void Wave(int enemyWave)
     {
-        //wave.text = "Wave: " + enemyWave;
+        wave.text = "Wave: " + enemyWave;
         amountOfWaves = enemyWave;
     }
 
     public void KilledEnemies(int kills)
     {
         amountOfKills += kills;
-        //killedEnemeis.text = "Enemies killed: " + amountOfKills;
+        killedEnemeis.text = "Enemies killed: " + amountOfKills;
     }
 
     public void DamageDealt(int damage)
     {
         amountOfDamage += damage;
-        //damageDealt.text = "Damage Dealt: " + amountOfDamage;
-        
+        damageDealt.text = "Damage Dealt: " + amountOfDamage;
+
     }
 
     public void Hp(float hp, float maxHp)

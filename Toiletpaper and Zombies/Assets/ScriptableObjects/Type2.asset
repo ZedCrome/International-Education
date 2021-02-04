@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Type2
   m_EditorClassIdentifier: 
   m_Health: 10
-  m_Speed: 2
+  m_Speed: 1.5
   m_Target: {fileID: 4410638846512239903, guid: 31a4ec0366295bb4a8b533554399d2bb, type: 3}

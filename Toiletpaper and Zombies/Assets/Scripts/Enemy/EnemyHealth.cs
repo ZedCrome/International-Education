@@ -18,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
         m_enemyHealth -= m_changeHealth;
         hud.DamageDealt(m_changeHealth);
 
-        if (m_enemyHealth == 0)
+        if (m_enemyHealth <= 0)
         {
             hud.KilledEnemies(1);
             //reset the current amount of health
