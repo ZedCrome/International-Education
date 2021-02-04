@@ -16,11 +16,14 @@ public class EnemyHealth : MonoBehaviour
     public void currentHP(int m_changeHealth)
     {
         m_enemyHealth -= m_changeHealth;
-        hud.DamageDealt(m_changeHealth);
+       
+        UIScript.instance.damagetext += m_changeHealth;
+        UIScript.instance.ChangeTextDamage();
 
         if (m_enemyHealth <= 0)
         {
-            hud.KilledEnemies(1);
+            UIScript.instance.killstext++;
+            UIScript.instance.ChangeTextKills();
             //reset the current amount of health
             m_enemyHealth = Data.m_Health;
             gameObject.SetActive(false);

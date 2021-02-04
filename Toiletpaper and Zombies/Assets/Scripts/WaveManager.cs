@@ -13,9 +13,10 @@ public class WaveManager : MonoBehaviour
     
     public int WaveLength;
     public int WaveMultiplier;
-    public float m_waveTimer;
+    public float m_cooldownTimer;
+    public float m_timeBetweenSpawning = 1.7f;
 
-    public int waveCount = 0;
+    
 
     private void Start()
     {
@@ -24,7 +25,7 @@ public class WaveManager : MonoBehaviour
     }
     IEnumerator CountDown()
     {
-        float m_currentWaitTimer = m_waveTimer;
+        float m_currentWaitTimer = m_cooldownTimer;
         while (m_currentWaitTimer > 0)
         {
             Debug.Log("New Wave in " + m_currentWaitTimer);
@@ -38,11 +39,11 @@ public class WaveManager : MonoBehaviour
 
     IEnumerator WaveSpawner()
     {
-        hud.Wave(waveCount);
+        
         Debug.Log("Starting New Wave");
         for (int i = 0; i < WaveLength * WaveMultiplier; i++)
         {
-            yield return new WaitForSeconds(1.7f);
+            yield return new WaitForSeconds(m_timeBetweenSpawning);
             GameObject m_currentSpawn = m_spawnLoc[Random.Range(0, m_spawnLoc.Length)];
             
 
@@ -53,7 +54,10 @@ public class WaveManager : MonoBehaviour
             }
         }
         WaveMultiplier++;
-        waveCount++;
+        UIScript.instance.wavetext++;
+        UIScript.instance.ChangeTextWave();
+        
+        
 
         StartCoroutine(WaveSpawner());
     }

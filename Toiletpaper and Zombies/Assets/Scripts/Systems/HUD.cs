@@ -30,20 +30,21 @@ public class HUD : MonoBehaviour
 
     public void Wave(int enemyWave)
     {
-        wave.text = "Wave: " + enemyWave;
+        //wave.text = "Wave: " + enemyWave;
         amountOfWaves = enemyWave;
     }
 
     public void KilledEnemies(int kills)
     {
         amountOfKills += kills;
-        killedEnemeis.text = "Enemies killed: " + amountOfKills;
+        //killedEnemeis.text = "Enemies killed: " + amountOfKills;
+        //killedEnemeis.text = "abc";
     }
 
     public void DamageDealt(int damage)
     {
         amountOfDamage += damage;
-        damageDealt.text = "Damage Dealt: " + amountOfDamage;
+        //damageDealt.text = "Damage Dealt: " + amountOfDamage;
 
     }
 
