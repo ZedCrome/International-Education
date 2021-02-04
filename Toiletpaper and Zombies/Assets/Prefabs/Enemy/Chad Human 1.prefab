@@ -51,7 +51,7 @@ Rigidbody2D:
   m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 8dea7062ee4095440b1d278663ef3766, type: 2}
-  Col: {fileID: 0}
+  Col: {fileID: 1188051937603886470}
 --- !u!114 &4102857029307801212
 MonoBehaviour:
   m_ObjectHideFlags: 0
