@@ -9,11 +9,7 @@ public class UIScript : MonoBehaviour
     public Text CurrentWave;
     public int wavetext;
 
-    public Text Currentkills;
-    public int killstext;
-
-    public Text Currentdamage;
-    public int damagetext;
+    
 
 
     private void Awake()
@@ -24,23 +20,21 @@ public class UIScript : MonoBehaviour
     private void Start()
     {
         ChangeTextWave();
-        ChangeTextDamage();
-        ChangeTextKills();
+        
     }
 
     public void ChangeTextWave()
     {
-       
 
-        CurrentWave.text = "Wave " + wavetext;
-    }
-    public void ChangeTextDamage()
-    {
-        Currentdamage.text = "Damage " + damagetext;
+        CurrentWave.text = "Wave " + PlayerPrefs.GetInt("Wave");
     }
 
-    public void ChangeTextKills()
+    
+    
+
+    private void Update()
     {
-        Currentkills.text = "kills " + killstext;
+        PlayerPrefs.SetInt("Wave", wavetext);
+        
     }
 }
