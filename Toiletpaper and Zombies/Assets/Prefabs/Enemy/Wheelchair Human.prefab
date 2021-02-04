@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 7198695650530860199}
   - component: {fileID: 1048136486640957621}
   - component: {fileID: 6394620907586205317}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wheelchair Human
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: e9eb267c7cdd2be48a3359e044b92dff, type: 2}
-  Col: {fileID: 0}
+  Col: {fileID: 7198695650530860199}
 --- !u!114 &6394620907586205317
 MonoBehaviour:
   m_ObjectHideFlags: 0
