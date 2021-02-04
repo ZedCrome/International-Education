@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f19c4a03fd9225449b8e677c5b95b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Data: {fileID: 11400000, guid: e9eb267c7cdd2be48a3359e044b92dff, type: 2}
+  Data: {fileID: 0}
 --- !u!114 &8639170829029434309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,9 +178,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0456c7f3d1b9b847929ddd51652b81a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Data: {fileID: 11400000, guid: e9eb267c7cdd2be48a3359e044b92dff, type: 2}
+  Data: {fileID: 0}
   enemySprite: {fileID: 0}
-  target: {fileID: 4532035345272133092, guid: e272b575a4b5c1341ba9aeacbaade604, type: 3}
+  target: {fileID: 0}
 --- !u!50 &8639170829029434314
 Rigidbody2D:
   serializedVersion: 4
