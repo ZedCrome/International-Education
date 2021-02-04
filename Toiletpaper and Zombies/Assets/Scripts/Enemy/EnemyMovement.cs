@@ -4,48 +4,32 @@ public class EnemyMovement : MonoBehaviour, iPooled
 {
     public EnemyData Data;
 
-    private Vector2 movement;
+    
     private float m_enemySpeed;
-
-
-    public Sprite enemySprite;
-    private SpriteRenderer mySprite;
-
+    
     private Rigidbody2D rb;
     private Vector2 targetPos;
-    [SerializeField] private GameObject target;
 
+    public BoxCollider2D Col;
 
+    private Vector2 SpawnLoc;
+    
     public void OnSpawn()
     {
         m_enemySpeed = Data.m_Speed;
-
+        SpawnLoc = gameObject.transform.position;
+        Col.enabled = true;
     }
 
     void Start()
     {
-
+        
         rb = GetComponent<Rigidbody2D>();
-        targetPos = target.transform.position;
-        mySprite = GetComponent<SpriteRenderer>();
+        targetPos = Data.m_Target.transform.position;
     }
-
-
+    
+    
     void FixedUpdate()
-    {
-        targetPos = target.transform.position;
-        MoveEnemy();
-
-        Flip();
-    }
-
-    private void Flip()
-    {
-        mySprite.flipX = transform.position.x > 0;
-    }
-
-
-    public void MoveEnemy()
     {
         if (Vector2.Distance(transform.position, targetPos) > 0.1)
         {
@@ -60,5 +44,14 @@ public class EnemyMovement : MonoBehaviour, iPooled
         {
             rb.velocity = new Vector2(0, 0);
         }
+        
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        targetPos = SpawnLoc;
+        m_enemySpeed += 5;
+        Col.enabled = false;
+    }
+
 }

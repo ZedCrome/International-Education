@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: e9eb267c7cdd2be48a3359e044b92dff, type: 2}
   enemySprite: {fileID: 0}
-  target: {fileID: 4532035345272133092, guid: e272b575a4b5c1341ba9aeacbaade604, type: 3}
+  Col: {fileID: 5240009030212764744}
 --- !u!50 &2345515701817111510
 Rigidbody2D:
   serializedVersion: 4

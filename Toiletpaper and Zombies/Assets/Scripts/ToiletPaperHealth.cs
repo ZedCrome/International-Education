@@ -1,20 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class ToiletPaperHealth : Health
+public class ToiletPaperHealth : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            print("Object Destroyed");
-            ChangeHealth(-1);
-        }
+    public int m_currentHealth = 6;
+    public GameObject[] m_toiletPaper;
+    private GameObject m_toBeDeleted;
+    
 
-        if (currentHealth == 0)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy" && m_currentHealth >= 0)
         {
-            Destroy(gameObject);
+            m_currentHealth--;
+            Debug.Log(m_currentHealth);
+            m_toBeDeleted = m_toiletPaper[Random.Range(0, m_toiletPaper.Length)];
+            Destroy(m_toBeDeleted);
         }
     }
+
+    
 }
