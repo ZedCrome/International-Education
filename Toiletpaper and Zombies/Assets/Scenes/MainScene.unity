@@ -1569,6 +1569,9 @@ MonoBehaviour:
   - prefab: {fileID: 5826996164227519630, guid: eea4c4d254ba169439d08443e45fa0f1, type: 3}
     tag: EnemyType14
     poolSize: 50
+  - prefab: {fileID: 406590343197549229, guid: 3faaa64d82031cb4282caa713e81552a, type: 3}
+    tag: StickerAmmo
+    poolSize: 50
 --- !u!4 &429883444
 Transform:
   m_ObjectHideFlags: 0
