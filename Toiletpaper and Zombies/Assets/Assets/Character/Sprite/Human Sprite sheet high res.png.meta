@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 2fc14a32ecd71bd45b4933eb00af45dc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1245378816988696626
+    second: Human Sprite sheet high res_0
+  - first:
+      213: 2579653093902153288
+    second: Human Sprite sheet high res_1
+  - first:
+      213: -8892637918514764090
+    second: Human Sprite sheet high res_2
+  - first:
+      213: 1605000296063939612
+    second: Human Sprite sheet high res_3
+  - first:
+      213: -2699948008040071816
+    second: Human Sprite sheet high res_4
+  - first:
+      213: 573903831599698189
+    second: Human Sprite sheet high res_5
+  - first:
+      213: -188692722841093008
+    second: Human Sprite sheet high res_6
+  - first:
+      213: 2693360511159194481
+    second: Human Sprite sheet high res_7
+  - first:
+      213: -7843968579533390297
+    second: Human Sprite sheet high res_8
+  - first:
+      213: -2007363335641838822
+    second: Human Sprite sheet high res_9
+  - first:
+      213: 1154191264191496524
+    second: Human Sprite sheet high res_10
+  - first:
+      213: 5212066759102881503
+    second: Human Sprite sheet high res_11
+  - first:
+      213: -6896752044824655023
+    second: Human Sprite sheet high res_12
+  - first:
+      213: 4318829780784582779
+    second: Human Sprite sheet high res_13
+  - first:
+      213: -4025464857399815858
+    second: Human Sprite sheet high res_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +77,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,7 +86,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +120,336 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 95
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230586d8f69784110800000000000000
+      internalID: 1245378816988696626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 95
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84676c142d4ccc320800000000000000
+      internalID: 2579653093902153288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_2
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 95
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c622c6ade0079480800000000000000
+      internalID: -8892637918514764090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 90
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14b94ff34b164610800000000000000
+      internalID: 1605000296063939612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_4
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 0
+        width: 115
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d7fb4779bd78ad0800000000000000
+      internalID: -2699948008040071816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_5
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 100
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d015cb18e7ae6f700800000000000000
+      internalID: 573903831599698189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_6
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cfa53e7f0a16df0800000000000000
+      internalID: -188692722841093008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_7
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 0
+        width: 110
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17355b76d1db06520800000000000000
+      internalID: 2693360511159194481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 110
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e3693d220a42390800000000000000
+      internalID: -7843968579533390297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_9
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 0
+        width: 90
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bcce38ea96424e0800000000000000
+      internalID: -2007363335641838822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_10
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 0
+        width: 90
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c414ef0f6d2840010800000000000000
+      internalID: 1154191264191496524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_11
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 0
+        width: 90
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fded2f94a1bf45840800000000000000
+      internalID: 5212066759102881503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_12
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 0
+        width: 90
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b07484e80d940a0800000000000000
+      internalID: -6896752044824655023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_13
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 0
+        width: 95
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b701b01bdc09feb30800000000000000
+      internalID: 4318829780784582779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human Sprite sheet high res_14
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 0
+        width: 310
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e419dde3a0da228c0800000000000000
+      internalID: -4025464857399815858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
