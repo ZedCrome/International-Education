@@ -4,6 +4,8 @@ public class EnemyMovement : MonoBehaviour, iPooled
 {
     public EnemyData Data;
 
+    private SpriteRenderer enemySprite;
+
     
     private float m_enemySpeed;
     
@@ -23,14 +25,18 @@ public class EnemyMovement : MonoBehaviour, iPooled
 
     void Start()
     {
-        
+        enemySprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         targetPos = Data.m_Target.transform.position;
     }
     
+
+   
     
     void FixedUpdate()
     {
+        Flip();
+
         if (Vector2.Distance(transform.position, targetPos) > 0.1)
         {
             float x = (targetPos.x - transform.position.x);
@@ -43,8 +49,12 @@ public class EnemyMovement : MonoBehaviour, iPooled
         else
         {
             rb.velocity = new Vector2(0, 0);
-        }
-        
+        }      
+    }
+
+    private void Flip()//flips enemies if they are on the right side of the map
+    {
+        enemySprite.flipX = transform.position.x > 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

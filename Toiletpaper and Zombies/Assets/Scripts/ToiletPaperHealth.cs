@@ -18,7 +18,13 @@ public class ToiletPaperHealth : MonoBehaviour
             Debug.Log(m_currentHealth);
             m_toBeDeleted = m_toiletPaper[Random.Range(0, m_toiletPaper.Length)];
             Destroy(m_toBeDeleted);
+            if (m_currentHealth <= 0)
+                NextScene();
         }
+    }
+    private void NextScene()
+    {
+        SceneManager.LoadScene(SceneManager.sceneCount + 1);
     }
 
     
