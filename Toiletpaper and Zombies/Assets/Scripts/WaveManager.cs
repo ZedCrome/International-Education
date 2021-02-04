@@ -13,7 +13,7 @@ public class WaveManager : MonoBehaviour
     public int WaveMultiplier;
     public float m_cooldownTimer;
     public float m_timeBetweenSpawning = 1.7f;
-
+    public string[] enemys;
     
 
     private void Start()
@@ -43,9 +43,11 @@ public class WaveManager : MonoBehaviour
         {
             yield return new WaitForSeconds(m_timeBetweenSpawning);
             GameObject m_currentSpawn = m_spawnLoc[Random.Range(0, m_spawnLoc.Length)];
-            
+            string abc = enemys[Random.Range(0, enemys.Length)];
 
-            GameObject m_enemyType1 = ObjectPool.instance.SpawnPool("EnemyType2", m_currentSpawn.transform.position, Quaternion.identity);
+            
+            GameObject m_enemyType1 = ObjectPool.instance.SpawnPool("EnemyType" + abc, m_currentSpawn.transform.position, Quaternion.identity);
+            
             if (m_enemyType1 != null)
             {
                 m_enemyType1.SetActive(true);

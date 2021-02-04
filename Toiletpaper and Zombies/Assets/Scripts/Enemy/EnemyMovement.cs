@@ -54,7 +54,7 @@ public class EnemyMovement : MonoBehaviour, iPooled
 
     private void Flip()//flips enemies if they are on the right side of the map
     {
-        enemySprite.flipX = transform.position.x > 0;
+        //enemySprite.flipX = transform.position.x > 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
