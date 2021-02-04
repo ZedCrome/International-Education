@@ -32,11 +32,13 @@ public class WaveManager : MonoBehaviour
             m_currentWaitTimer--;
             
         }
+        
         StartCoroutine(WaveSpawner());
     }
 
     IEnumerator WaveSpawner()
     {
+        hud.Wave(waveCount);
         Debug.Log("Starting New Wave");
         for (int i = 0; i < WaveLength * WaveMultiplier; i++)
         {

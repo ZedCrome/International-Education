@@ -9,7 +9,7 @@ public class ToiletPaperHealth : Health
         if (collision.gameObject.CompareTag("Enemy"))
         {
             print("Object Destroyed");
-            ChangeHealth(-maxHealth);
+            ChangeHealth(-1);
         }
 
         if (currentHealth == 0)

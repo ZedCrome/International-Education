@@ -33,22 +33,17 @@ public class HUD : MonoBehaviour
         amountOfWaves = enemyWave;
     }
 
-    public void RemainingEnemies(int enemies)
-    {
-        remainingEnemies.text = "Enemies remaining: " + enemies;
-        
-    }
-
     public void KilledEnemies(int kills)
     {
-        killedEnemeis.text = "Enemies killed: " + kills;
-        amountOfKills = kills;
+        amountOfKills += kills;
+        killedEnemeis.text = "Enemies killed: " + amountOfKills;
     }
 
     public void DamageDealt(int damage)
     {
-        damageDealt.text = "Damage Dealt: " + damage;
-        amountOfDamage = damage;
+        amountOfDamage += damage;
+        damageDealt.text = "Damage Dealt: " + amountOfDamage;
+        
     }
 
     public void Hp(float hp, float maxHp)
